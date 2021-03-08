@@ -3,6 +3,10 @@ from django.shortcuts import render, redirect
 
 from app.models import Categoria
 
+def home(request):
+    return render(request,'home.html')
+
+
 def categoria_lista(request):
     categorias = Categoria.objects.all()
     return render(request,'app/categoria_lista.html',{'categorias': categorias})
