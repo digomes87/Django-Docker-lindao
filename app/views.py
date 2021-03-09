@@ -15,7 +15,8 @@ def categoria_lista(request):
 class CategoriaFormulario(ModelForm):
     class Meta:
         model = Categoria
-        fields = ['name']
+        fields = ['produto']
+
 
 
 def catergoria_criando(request):
